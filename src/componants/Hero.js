@@ -1,4 +1,4 @@
-import Heart from "@/app/Layout/Icons/heart";
+import Heart from "@/componants/Layout/Icons/heart";
 
 export default function Hero() {
   return (
@@ -28,10 +28,10 @@ export default function Hero() {
           </div>
           {/* image */}
           <div className="hero__img hidden xl:flex max-w-[814px] self-end">
-            <img src="/assets/img/hero/img1.png" alt=""/>
+            <img src="/assets/img/hero/img1.png" alt="" />
           </div>
         </div>
       </div>
     </section>
-  )
+  );
 }

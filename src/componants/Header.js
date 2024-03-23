@@ -1,6 +1,6 @@
 
-import Map from "@/app/Layout/Icons/map";
-import Phone from "@/app/Layout/Icons/phone";
+import Map from "@/componants/Layout/Icons/map";
+import Phone from "@/componants/Layout/Icons/phone";
 import Link from "next/link";
 import MobileNav from "./MobileNav";
 import DesktopNav from "./DesktopNav";
@@ -35,14 +35,14 @@ export default function Header() {
               +201146757349
             </a>
           </div>
-          
+
           {/* btn */}
           {/* <button 
             className="btn btn-sm btn-outline w-[240px] lg:w-auto mx-auto lg:mx-0 ">
             Book Now
           </button>  */}
           <MobileNav />      {/* need to activate */}
-          <DesktopNav/>
+          <DesktopNav />
         </div>
       </div>
     </header>

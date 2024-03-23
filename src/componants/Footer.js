@@ -1,14 +1,12 @@
-import Email from "@/app/Layout/Icons/Email";
-import Map from "@/app/Layout/Icons/map";
-import Phone from "@/app/Layout/Icons/phone";
+import Email from "@/componants/Layout/Icons/Email";
+import Map from "@/componants/Layout/Icons/map";
+import Phone from "@/componants/Layout/Icons/phone";
 // import { FaFacebook, FaInstagram, FaTwitter, FaWhatsapp } from "react-icons/fa";
 
 export default function Footer() {
   return (
     <footer
-      className="bg-footer bg-cover bg-no-repeat md:bg-cover sm:bg-cover
-      footer pt-12 xl:pt-[90px]"
-    >
+      className="bg-footer bg-cover bg-no-repeat md:bg-cover sm:bg-cover footer pt-12 xl:pt-[90px]">
       <div className="container mx-auto pd-12 xl:pd-[100px]">
         <div className="flex flex-col xl:flex-row gap-x-5 gap-y-10">
           {/*  footer contact section  */}
@@ -23,7 +21,7 @@ export default function Footer() {
             </a>
 
             {/*  location , email & phone  */}
-            <div className="flex flex-col gap-y-3 mb-10">
+            <div className="flex flex-col gap-y-3 mb-10 text-secondary">
               <div className="flex items-center gap-x-[6px]">
                 <Map />
                 <div>
@@ -35,17 +33,16 @@ export default function Footer() {
               <div className="flex items-center gap-x-[6px]">
                 <Email />
                 <a
-                  href="Medicon-Group@email.com"
-                  className="text-secondary">
+                  href="Medicon-Group@email.com">
                   Medicon-Group@email.com
                 </a>
               </div>
               <div className="flex items-center gap-x-[6px]">
                 <Phone />
-                <a href=" tel:+201146757348" className="text-secondary">
+                <a href=" tel:+201146757348">
                   +201146757348
                 </a>
-                <a href=" tel:+201146757349" className="text-secondary">
+                <a href=" tel:+201146757349">
                   +201146757349
                 </a>
               </div>
@@ -77,16 +74,16 @@ export default function Footer() {
           {/*  footer quick links section  */}
           <div className="footer__item flex-1">
             <h4 className="h4 mb-5">Quick Links</h4>
-            <div className="flex gap-x-2">
+            <div className="flex gap-x-2 text-secondary">
               {/*  list 1  */}
               <ul className="flex flex-col flex-1 gap-y-5">
                 <li>
-                  <a href="#" className="hover:text-accent transition-all">
+                  <a href="/" className="hover:text-accent transition-all">
                     Home
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-accent transition-all">
+                  <a href="/About" className="hover:text-accent transition-all">
                     About Us
                   </a>
                 </li>
@@ -125,7 +122,7 @@ export default function Footer() {
           <div className="footer__item flex-1">
             <h4 className="h4 mb-5">Opening Hours</h4>
             {/*  list  */}
-            <div className="flex flex-col gap-5">
+            <div className="flex flex-col gap-5 text-secondary">
               {/*  item 1  */}
               <div className="flex-1">
                 <div className="flex justify-between items-center border-b pd-[10px]">

@@ -20,7 +20,7 @@ export default function DesktopNav() {
             href={'/about'}
             className=" border-r pr-4 text-secondary hover:text-accent transition-all duration-300"
           >
-              About Us
+            About Us
           </Link>
         </li>
         <li>

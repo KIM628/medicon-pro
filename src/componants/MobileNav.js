@@ -1,27 +1,27 @@
-import Search from "@/app/Layout/Icons/Search";
-import ArrowRight from "@/app/Layout/Icons/arrowRight";
+import Search from "@/componants/Layout/Icons/Search";
+import ArrowRight from "@/componants/Layout/Icons/arrowRight";
 import Link from "next/link";
 
 export default function MobileNav() {
   // mobile nav    ++++++ do it later +++++++
 
-  // const mobileNav = document.querySelector('.mnav');
-  // const closeBtn = document.querySelector('.mnav__close-btn');
-  // const closeBtnIcn = document.querySelector('.mnav__close-btn-icom');
-  
-  // const navOpenedClass = 'left-0';
-  // const navClosedClass = '-left-[300px]';
-  // const arrowLeftClass = 'ri-arrow-left-s-line';
-  // const arrowRightClass = 'ri-arrow-right-s-line';
+  const mobileNav = document.querySelector('.mnav');
+  const closeBtn = document.querySelector('.mnav__close-btn');
+  const closeBtnIcn = document.querySelector('.mnav__close-btn-icom');
 
-  // closeBtn.addEventListener('click', () => {
-  //   if (mobileNav.classList.contains(navClosedClass)) {
-  //     mobileNav.classList.toggle(navOpenedClass);
+  const navOpenedClass = 'left-0';
+  const navClosedClass = '-left-[300px]';
+  const arrowLeftClass = 'ri-arrow-left-s-line';
+  const arrowRightClass = 'ri-arrow-right-s-line';
 
-  //     closeBtnIcn.classList.toggle(arrowLeftClass);
-  //     closeBtnIcn.classList.toggle(arrowRightClass);
-  //   }
-  // });
+  closeBtn.addEventListener('click', () => {
+    if (mobileNav.classList.contains(navClosedClass)) {
+      mobileNav.classList.toggle(navOpenedClass);
+
+      closeBtnIcn.classList.toggle(arrowLeftClass);
+      closeBtnIcn.classList.toggle(arrowRightClass);
+    }
+  });
 
   return (
     <nav
@@ -83,8 +83,8 @@ export default function MobileNav() {
           />
         </form> */}
       </div>
-    </nav>        
-  )
-}    
+    </nav>
+  );
+}
 
 
