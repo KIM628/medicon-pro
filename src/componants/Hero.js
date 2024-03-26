@@ -1,8 +1,26 @@
+'use client';
 import Heart from "@/componants/Layout/Icons/heart";
+import Link from "next/link";
+import ScrollReveal from "scrollreveal";
+
 
 export default function Hero() {
+
+  const sr = ScrollReveal({
+    origin: 'bottom',
+    distance: '60px',
+    duration: 3000,
+    delay: 600,
+    // rest:true //rest animation
+  });
+
+  sr.reveal('.hero__text', { origin: 'top' });
+  sr.reveal('.hero__img');
+
+
   return (
-    <section className="hero bg-grey py-12 xl:pt-12 xl:pd-0 overflow-hidden">
+    <section
+      className="hero bg-grey py-12 xl:pt-12 xl:pd-0 overflow-hidden">
       <div className="container mx-auto h-full">
         {/* text & img */}
         <div className="flex flex-col xl:flex-row items-center justify-between h-full">
@@ -24,7 +42,12 @@ export default function Hero() {
               Medicon Group founded in 2017, IT is a unique high-tech Institution focusing on medical construction and consulting, we are specialized in medical equipment, laboratory equipment products and reagents.
             </p>
             {/* btn */}
-            <button className="btn btn-lg btn-accent mx-auto xl:mx-0">Contact Us</button>
+            <button className="btn btn-lg btn-accent mx-auto xl:mx-0">
+              <Link
+                href={'/About'}>
+                Learn More
+              </Link>
+            </button>
           </div>
           {/* image */}
           <div className="hero__img hidden xl:flex max-w-[814px] self-end">

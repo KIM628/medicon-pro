@@ -9,16 +9,16 @@ export default function Stats() {
             className="stats__item flex-1 xl:border-r flex flex-col items-center">
             <div
               className="text-4xl xl:text-[64px] font-semibold text-accent-tertiary xl:mb-2">
-              +3212
+              +32
             </div>
-            <div>Happy Patients</div>
+            <div>Happy Customers</div>
           </div>
           {/* item 2 */}
           <div
             className="stats__item flex-1 xl:border-r flex flex-col items-center">
             <div
               className="text-4xl xl:text-[64px] font-semibold text-accent-tertiary xl:mb-2">
-              26
+              8
             </div>
             <div>Total Branches</div>
           </div>
@@ -27,7 +27,7 @@ export default function Stats() {
             className="stats__item flex-1 xl:border-r flex flex-col items-center">
             <div
               className="text-4xl xl:text-[64px] font-semibold text-accent-tertiary xl:mb-2">
-              +20
+              +10
             </div>
             <div>Senior Engineer</div>
           </div>

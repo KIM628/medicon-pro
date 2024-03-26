@@ -1,7 +1,8 @@
 import Email from "@/componants/Layout/Icons/Email";
 import Map from "@/componants/Layout/Icons/map";
 import Phone from "@/componants/Layout/Icons/phone";
-// import { FaFacebook, FaInstagram, FaTwitter, FaWhatsapp } from "react-icons/fa";
+import Link from "next/link";
+import { FaFacebook, FaInstagram, FaTwitter, FaWhatsapp } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -12,13 +13,13 @@ export default function Footer() {
           {/*  footer contact section  */}
           <div className="footer__item flex-1">
             {/*  logo  */}
-            <a href="">
+            {/* <a href="">
               <img
                 className="mb-[30px]"
-                src="assets/img/header/logo.svg"
+                src={'/assets/img/image.jpeg'}
                 alt=""
               />
-            </a>
+            </a> */}
 
             {/*  location , email & phone  */}
             <div className="flex flex-col gap-y-3 mb-10 text-secondary">
@@ -32,10 +33,9 @@ export default function Footer() {
               </div>
               <div className="flex items-center gap-x-[6px]">
                 <Email />
-                <a
-                  href="Medicon-Group@email.com">
+                <p>
                   Medicon-Group@email.com
-                </a>
+                </p>
               </div>
               <div className="flex items-center gap-x-[6px]">
                 <Phone />
@@ -48,28 +48,32 @@ export default function Footer() {
               </div>
             </div>
             {/*  social  */}
-            {/* <div className="flex gap-[14px] text-[30px]">
+            <div
+              className="flex gap-[14px] text-[30px]">
               <div
-                className="p-[10px] rounded-[10px] shadow-custom2 text-accent-tertiary hover:text-accent cursor-pointer transition-all"
-              >
-                <FaWhatsapp />
+                className="p-[10px] rounded-[10px] shadow-custom2 text-accent-tertiary hover:text-accent cursor-pointer transition-all">
+                <Link
+                  href={'https://wa.me/+201146757349'}>
+                  <FaWhatsapp />
+                </Link>
               </div>
               <div
-                className="p-[10px] rounded-[10px] shadow-custom2 text-accent-tertiary hover:text-accent cursor-pointer transition-all"
-              >
+                className="p-[10px] rounded-[10px] shadow-custom2 text-accent-tertiary hover:text-accent cursor-pointer transition-all">
+                <Link href={'https://www.facebook.com/people/Medicon-Group/100095171585309/?mibextid=LQQJ4d'}>
                 <FaFacebook />
+                </Link>
               </div>
-              <div
+              {/* <div
                 className="p-[10px] rounded-[10px] shadow-custom2 text-accent-tertiary hover:text-accent cursor-pointer transition-all"
               >
                 <FaTwitter />
-              </div>
-              <div
+              </div> */}
+              {/* <div
                 className="p-[10px] rounded-[10px] shadow-custom2 text-accent-tertiary hover:text-accent cursor-pointer transition-all"
               >
                 <FaInstagram />
-              </div>
-            </div> */}
+              </div> */}
+            </div>
           </div>
           {/*  footer quick links section  */}
           <div className="footer__item flex-1">
@@ -88,12 +92,12 @@ export default function Footer() {
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-accent transition-all">
+                  <a href={'/services'} className="hover:text-accent transition-all">
                     Services
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-accent transition-all">
+                  <a href={'/contact'} className="hover:text-accent transition-all">
                     Contact Us
                   </a>
                 </li>
@@ -126,34 +130,18 @@ export default function Footer() {
               {/*  item 1  */}
               <div className="flex-1">
                 <div className="flex justify-between items-center border-b pd-[10px]">
-                  <div>Monday - Thursday</div>
+                  <div>Saturday - Thursday</div>
                   <div className="text-accent font-medium">
-                    8:00 Am - 6:00 Pm
+                    10:00 Am - 8:00 Pm
                   </div>
                 </div>
               </div>
               {/*  item 2  */}
               <div className="flex-1">
                 <div className="flex justify-between items-center border-b pd-[10px]">
-                  <div>Friday - Saturday</div>
+                  <div>Friday</div>
                   <div className="text-accent font-medium">
-                    10:00 Am - 4:00 Pm
-                  </div>
-                </div>
-              </div>
-              {/*  item 3  */}
-              <div className="flex-1">
-                <div className="flex justify-between items-center border-b pd-[10px]">
-                  <div>Sunday</div>
-                  <div className="text-accent font-medium">Emergency Only</div>
-                </div>
-              </div>
-              {/*  item 4  */}
-              <div className="flex-1">
-                <div className="flex justify-between items-center border-b pd-[10px]">
-                  <div>Personal</div>
-                  <div className="text-accent font-medium">
-                    7:00 Am - 9:00 Pm
+                    Day Off
                   </div>
                 </div>
               </div>

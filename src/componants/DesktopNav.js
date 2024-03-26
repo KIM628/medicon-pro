@@ -17,7 +17,7 @@ export default function DesktopNav() {
         </li>
         <li>
           <Link
-            href={'/about'}
+            href={'/About'}
             className=" border-r pr-4 text-secondary hover:text-accent transition-all duration-300"
           >
             About Us
@@ -33,24 +33,13 @@ export default function DesktopNav() {
         </li>
         <li>
           <Link
-            href={'/contact-us'}
+            href={'/contact'}
             className="text-secondary hover:text-accent transition-all duration-300"
           >
             Contact Us
           </Link>
         </li>
       </ul>
-      {/* form */}
-      {/* <form
-        className="relative flex gap-x-[10px] justify-center items-center group">
-        <Search />
-        <input
-          type="text"
-          id="search-input"
-          placeholder="Search..."
-          className="outline-none w-[100px] focus:w-[160px] focus:border-b-2 focus:border-accent placeholder:italic placeholder:text-base transition-all duration-300"
-        />
-      </form> */}
     </nav>
   );
 }

@@ -5,23 +5,23 @@ import Link from "next/link";
 export default function MobileNav() {
   // mobile nav    ++++++ do it later +++++++
 
-  const mobileNav = document.querySelector('.mnav');
-  const closeBtn = document.querySelector('.mnav__close-btn');
-  const closeBtnIcn = document.querySelector('.mnav__close-btn-icom');
+  // const mobileNav = document.querySelector('.mnav');
+  // const closeBtn = document.querySelector('.mnav__close-btn');
+  // const closeBtnIcn = document.querySelector('.mnav__close-btn-icom');
 
-  const navOpenedClass = 'left-0';
-  const navClosedClass = '-left-[300px]';
-  const arrowLeftClass = 'ri-arrow-left-s-line';
-  const arrowRightClass = 'ri-arrow-right-s-line';
+  // const navOpenedClass = 'left-0';
+  // const navClosedClass = '-left-[300px]';
+  // const arrowLeftClass = 'ri-arrow-left-s-line';
+  // const arrowRightClass = 'ri-arrow-right-s-line';
 
-  closeBtn.addEventListener('click', () => {
-    if (mobileNav.classList.contains(navClosedClass)) {
-      mobileNav.classList.toggle(navOpenedClass);
+  // closeBtn.addEventListener('click', () => {
+  //   if (mobileNav.classList.contains(navClosedClass)) {
+  //     mobileNav.classList.toggle(navOpenedClass);
 
-      closeBtnIcn.classList.toggle(arrowLeftClass);
-      closeBtnIcn.classList.toggle(arrowRightClass);
-    }
-  });
+  //     closeBtnIcn.classList.toggle(arrowLeftClass);
+  //     closeBtnIcn.classList.toggle(arrowRightClass);
+  //   }
+  // });
 
   return (
     <nav
@@ -35,7 +35,7 @@ export default function MobileNav() {
       <div className="px-12 flex flex-col gap-y-12 h-full">
         {/* logo */}
         <Link href={'#'}>
-          <img src="/assets/img/header/Logo.svg" />
+          <img src={'/assets/img/MG-Logo.png'} />
         </Link>
         {/* list */}
         <ul className="flex flex-col gap-y-5">

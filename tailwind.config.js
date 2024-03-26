@@ -37,7 +37,7 @@ module.exports = {
         departments:'url(../../public/assets/img/departments/bg.svg)',
         quoteLeft:'url(../../public/assets/icons/testimonials/quote-left.svg)',
         quoteRight: 'url(../../public/assets/icons/testimonials/quote-right.svg)',
-        footer:'url(../../public/assets/img/footer.jpg)'
+        footer: 'url(../../public/assets/img/footer.jpg)',
       }
     },
   },
