@@ -82,12 +82,12 @@ export default function Footer() {
               {/*  list 1  */}
               <ul className="flex flex-col flex-1 gap-y-5">
                 <li>
-                  <a href="/" className="hover:text-accent transition-all">
+                  <a href={'/'} className="hover:text-accent transition-all">
                     Home
                   </a>
                 </li>
                 <li>
-                  <a href="/About" className="hover:text-accent transition-all">
+                  <a href={'/About'} className="hover:text-accent transition-all">
                     About Us
                   </a>
                 </li>
