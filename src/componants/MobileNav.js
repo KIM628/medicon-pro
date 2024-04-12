@@ -30,14 +30,14 @@ export default function MobileNav() {
       {/* logo, list, form */}
       <div className="px-12 flex flex-col gap-y-12 h-full">
         {/* logo */}
-        <Link href={'#'}>
+        <Link href={'/'}>
           <img src={'/assets/img/MG-Logo.png'} />
         </Link>
         {/* list */}
         <ul className="flex flex-col gap-y-5">
           <li>
             <Link
-              href={'#'}
+              href={'/'}
               className="text-secondary hover:text-accent transition-all duration-300"
             >
               Home
@@ -45,7 +45,7 @@ export default function MobileNav() {
           </li>
           <li>
             <Link
-              href={'#'}
+              href={'/About'}
               className="text-secondary hover:text-accent transition-all duration-300"
             >
               About Us
@@ -53,7 +53,7 @@ export default function MobileNav() {
           </li>
           <li>
             <Link
-              href={'#'}
+              href={'/services'}
               className="text-secondary hover:text-accent transition-all duration-300"
             >
               Services
@@ -61,7 +61,7 @@ export default function MobileNav() {
           </li>
           <li>
             <Link
-              href={'#'}
+              href={'/contact'}
               className="text-secondary hover:text-accent transition-all duration-300"
             >
               Contact Us
