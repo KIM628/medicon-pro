@@ -1,4 +1,41 @@
+'use client';
+import React, { useState } from 'react';
+import emailjs from '@emailjs/browser';
+
 export default function ContactUs() {
+
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // Your emailjs services ID , Template & public key 
+    const servicesId = 'service_uhq92k4';
+    const templateId = 'template_hiui0qa';
+    const publicKey = 'fxqCW9aqmbWufZrwg';
+
+    // create a new object that contain dynamic template params 
+    const templateParams = {
+      from_name: name,
+      from_email: email,
+      to_name: 'Medicon-Group',
+      message: message,
+    };
+    // send the email using Emailjs 
+    emailjs.send(servicesId, templateId, templateParams, publicKey).then((response) => {
+      console.log('email sent good ', response);
+      setName('');
+      setEmail('');
+      setMessage('');
+    }).catch((error) => {
+      console.log('error sending email ', error);
+    });
+  };
+
+
+
   return (
     <section className="appointment section">
       <div className="container grid max-w-6xl grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 md:divide-x">
@@ -30,21 +67,35 @@ export default function ContactUs() {
             </p>
           </div>
         </div>
-        <form novalidate="" className="flex flex-col py-6 space-y-6 md:py-0 md:px-6">
+        <form onSubmit={handleSubmit} className="flex flex-col py-6 space-y-6 md:py-0 md:px-6">
           <label className="block">
             <span className="mb-1">Full name</span>
-            <input type="text" placeholder="Your Name ..." className="border block w-full rounded-md shadow-sm " />
+            <input
+              type="text"
+              placeholder="Your Name ..."
+              className="border block w-full rounded-md shadow-sm "
+              onChange={(e) => setName(e.target.value)}
+            />
           </label>
           <label className="block">
-            <span className="mb-1">Email address</span>
-            <input type="email" placeholder="Email ..." className="border block w-full rounded-md shadow-sm " />
+            <span className="mb-1">How to contact you </span>
+            <input
+              type="text"
+              placeholder="Email OR Phone"
+              className="border block w-full rounded-md shadow-sm "
+              onChange={(e) => setEmail(e.target.value)}
+            />
           </label>
           <label className="block">
             <span className="mb-1">Message</span>
-            <textarea rows="3" className="border block w-full rounded-md  ">
+            <textarea
+              rows="3"
+              className="border block w-full rounded-md "
+              onChange={(e) => setMessage(e.target.value)}
+            >
             </textarea>
           </label>
-          <button type="button" className="btn btn-accent self-center px-8 py-3 text-lg rounded focus:ring hover:ring focus:ring-opacity-75 hover:ring-cayn-400">Submit</button>
+          <button type="submit" className="btn btn-accent self-center px-8 py-3 text-lg rounded focus:ring hover:ring focus:ring-opacity-75 hover:ring-cayn-400">Submit</button>
         </form>
       </div>
     </section>
