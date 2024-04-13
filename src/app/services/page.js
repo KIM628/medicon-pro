@@ -15,7 +15,7 @@ export default function App() {
     <section className='section'>
       <div className="max-w-[560px] h-[900px] w-full m-auto py-16 px-4 relative group">
         <h4 className="h4 mb-5 text-center">Ouer Services</h4>
-        <p>We Provide Maintanens and Reagents for : </p>
+        <p>We provide maintenance and reagents for : </p>
         <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
           <SwiperSlide>
             <img src="/assets/img/devices/ABX_Micros.jpg" />
