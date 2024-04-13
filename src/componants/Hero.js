@@ -11,7 +11,7 @@ export default function Hero() {
     distance: '60px',
     duration: 3000,
     delay: 600,
-    // rest:true //rest animation
+    // rest:true        //rest animation
   });
 
   sr.reveal('.hero__text', { origin: 'top' });
@@ -44,7 +44,7 @@ export default function Hero() {
             {/* btn */}
             <button className="btn btn-lg btn-accent mx-auto xl:mx-0">
               <Link
-                href={'/About'}>
+                href='/About'>
                 Learn More
               </Link>
             </button>
