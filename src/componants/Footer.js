@@ -2,7 +2,7 @@ import Email from "@/componants/Layout/Icons/Email";
 import Map from "@/componants/Layout/Icons/map";
 import Phone from "@/componants/Layout/Icons/phone";
 import Link from "next/link";
-import { FaFacebook, FaInstagram, FaTwitter, FaWhatsapp } from "react-icons/fa";
+import { FaFacebook, FaWhatsapp } from "react-icons/fa";
 
 export default function Footer() {
   return (
